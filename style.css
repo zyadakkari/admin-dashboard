@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "robotoReg";
+    src: url('./roboto/roboto-regular.ttf');
+}
+
+@font-face {
+    font-family: "robotoLight";
+    src: url('./roboto/roboto-light.ttf');
+}
+
+.container {
+    min-width: 500px;
+    min-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.top-half {
+    display: flex;
+}
+
+.search {
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    gap: 15px;
+}
+
+.search img {
+    width: 20px;
+    flex-grow: 1 1 auto;
+}
+
+input {
+    flex: 1 1 auto;
+    width: 500px;
+    height: 25px;
+    border-radius: 25px;
+    border: none;
+    background-color: #e5e7eb;
+}
+
+.profile-icons {
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 15px;
+    font-family: robotoReg;
+
+}
+
+#notification {
+    width: 20px;
+}
+
+#profile-pic {
+    width: 40px;
+    border-radius: 25px;
+}
+
+
+.user-name {
+    justify-content: center;
+}
+
+.bottom-half {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.user-welcome {
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    font-family: robotoReg;
+}
+
+.welcome {
+    font-size: 10px;
+}
+
+.large-user-name {
+    font-size: 20px;
+}
+
+.action-buttons {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.action-buttons button {
+    background-color: #0ea5e9;
+    color: white;
+    width: 6em;
+    height: 2em;
+    border-radius: 25px;
+}
+
+#large-profile-pic {
+    width: 60px;
+    border-radius: 50px;
+}
+
+.navbar {
+    grid-row: 1 / 3;
+    grid-column: 1;
+    background-color: #0ea5e9;
+    display: grid;
+    grid-template-rows: 10% 25% 12.5% 52.5%;
+    padding-left: 15px;
+    gap: 50px;
+
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+}
+
+.logo {
+    font-family: robotoReg;
+    color: white;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 25px;
+}
+
+.logo img {
+    width: 35px;
+}
+
+.sitenav {
+    padding-left: 5px;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.sitenav * {
+    font-family: robotoReg;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.sitenav img {
+    width: 20px;
+}
+
+.helpnav {
+    padding-left: 5px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.helpnav * {
+    font-family: robotoReg;
+    color: white;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.helpnav * img {
+    width: 20px;
+}
+
+.main-section {
+    grid-row: 2;
+    grid-column: 2;
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.projectlist {
+    background-color: #e5e7eb;
+    grid-column: 1;
+    padding: 25px;
+    display: grid;
+    gap: 25px;
+    grid-template-rows: 5% repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.projects-heading {
+    grid-column: 1 / -1;
+    grid-row: 1/2;
+    font-family: robotoLight;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.project {
+    min-height: 200px;
+    min-width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    border-left: 10px solid #f59e0b;
+}
+
+.sidebar {
+    background-color: #e5e7eb;
+    grid-column: 2;
+    padding: 10px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.announcements {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.announcements-heading {
+    font-family: robotoLight;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.announcements-content {
+    min-height: 100px;
+    min-width: 150px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.announcement-title {
+    font-weight: bold;
+}
+
+.trending-heading {
+    font-family: robotoLight;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.trending {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.trending-content {
+    min-height: 100px;
+    min-width: 150px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.trend {
+    display: flex;
+    gap: 10px;
+}
+
+.trend-text {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+}
+
+.trend-image img {
+    width: 20px;
+    border-radius: 10px;
+}
